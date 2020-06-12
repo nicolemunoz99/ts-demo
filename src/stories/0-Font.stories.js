@@ -2,7 +2,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 
-
+import {Title} from '../components/atoms/InputLabels.tsx';
 
 
 
@@ -18,13 +18,11 @@ export default {
   title: 'Font',
   component: FontWrapper,
   parameters: {
-    info: {
-      inline: false,
-      text: `documentation of fonts`
-    },
-    notes: 'some notes'
+    notes: 'fonts for form'
   }
 };
+
+export const Test = () => <Title value="test label"/>
 
 export const InputFieldLabel = () => <FontWrapper color="text.secondary" fontSize="0.8rem" letterSpacing="0.1rem">Input label</FontWrapper>;
 
