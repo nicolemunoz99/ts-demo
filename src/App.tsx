@@ -1,25 +1,38 @@
 import React from 'react';
-import InputLabel from './components/atoms/InputLabel';
+import Page from './components/molecules/Page';
+import SalaryInputGroup from './modules/SalaryInputGroup';
+import NameInputGroup from './modules/NameInputGroup';
+// import InputDisplay from './modules/InputDisplay';
 
 function App() {
+
+  const handleChange = (e: any) => {
+    console.log('values: ', e.target.id, e.target.value)
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <InputLabel value="test label" role="title"/>
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Page title="My App">
+
+      <NameInputGroup onChange={handleChange} />
+
+      <SalaryInputGroup onChange={handleChange} />
+
+    </Page>
   );
 }
 
 export default App;
+
+
+
+
+
+interface formInterface {
+  namePref: string,
+  name: string,
+  nameSuff: string,
+  currency: string,
+  salaryNum: string
+};
+
+

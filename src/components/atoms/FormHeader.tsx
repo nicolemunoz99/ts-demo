@@ -14,24 +14,21 @@ const useStyles = makeStyles({
   }
 });
 
-interface TitleProps {
-  value: string;
+interface HeaderProps {
   level: string;
 };
 
 
-const FormHeader: React.FC<TitleProps> = ({ value, level }) => {
+const FormHeader: React.FC<HeaderProps> = ({ children, level }) => {
   const classes = useStyles();
 
   let getLevelClass = (key: string) => (obj: Record<string, any>) => obj[key];
- 
-  console.log('roleClass', level, getLevelClass(level)(classes))
 
   let levelClass = level ? getLevelClass(level)(classes) : '';
 
   return (
     <span className = {`${classes.root} ${levelClass}`}>
-      { value }
+      { children }
     </span>
   );
 };
