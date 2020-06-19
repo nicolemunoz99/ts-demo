@@ -22,7 +22,7 @@ const InputGroup: React.FC<GroupInputProps> = ({ title, units, children }) => {
         { children }
 
 
-        <Grid item>
+        <Grid item  >
           {units && <InputLabel role="units">{units}</InputLabel>}
         </Grid>
 

@@ -7,6 +7,7 @@ export const BaseButton = withStyles({
   root: {
     padding: '0.4rem 2rem 0.4rem 2rem',
     textTransform: 'none',
+    margin: '1rem'
   }
 })(Button);
 

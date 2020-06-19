@@ -6,6 +6,7 @@ const useStyles = makeStyles({
     fontFamily: 'Arial, Helvetica, sans-serif',
   },
   h1: {
+    margin: '3rem 0 0 0 ',
     fontSize: '1.2rem',
     fontWeight: 520,
   },
@@ -27,9 +28,9 @@ const FormHeader: React.FC<HeaderProps> = ({ children, level }) => {
   let levelClass = level ? getLevelClass(level)(classes) : '';
 
   return (
-    <span className = {`${classes.root} ${levelClass}`}>
+    <div className = {`${classes.root} ${levelClass}`}>
       { children }
-    </span>
+    </div>
   );
 };
 

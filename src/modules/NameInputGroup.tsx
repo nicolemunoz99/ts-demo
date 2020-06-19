@@ -23,11 +23,11 @@ const prefixOptions = [
     label: '-'
   },
   {
-    value: '1',
+    value: 'Ms',
     label: 'Ms.'
   },
   {
-    value: '2',
+    value: 'Mr',
     label: 'Mr.'
   },
 ];
