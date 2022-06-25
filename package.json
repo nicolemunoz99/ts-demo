@@ -17,7 +17,7 @@
     "axios": "^0.19.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "jsrsasign": "^8.0.16",
+    "jsrsasign": "^10.5.25",
     "lodash": "^4.17.15",
     "react": "^16.13.1",
     "react-addons-test-utils": "^15.6.2",
